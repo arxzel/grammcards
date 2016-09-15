@@ -10,25 +10,6 @@
         
     <script src="js/jquery-2.2.4.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
-    
-    <script>
-        function allowDrop(ev) {
-            ev.preventDefault();
-        }
-
-        function drag(ev) {
-            var codigo = $(ev.target.id).text();
-            //ev.dataTransfer.setData("text", ev.target.id);
-            ev.dataTransfer.setData("text", ev.target.id);
-        }
-
-        function drop(ev) {
-            ev.preventDefault();
-            var data = ev.dataTransfer.getData("text");
-            ev.target.appendChild(document.getElementById(data));
-        }
-</script>
-   
     <title>Grammcards</title>
 </head>
 <body>
@@ -38,35 +19,247 @@
         </header>
         <content data-role="content">
             <div class="mainHeader">
-                <h2>It's an example of how to work this App</h2>
-                <h3> The grammcards App was developed for 6th students</h3>
+                <h2>It's an new metodology for learning.</h2>
+                <h3> The grammcards App was developed for 6th students to the century XXI school.</h3>
             </div>
             <div class="mainBody">
-               <h4>Simple present / how is the question's grammar?</h4>
-               <div class="grammContainer" ondrop="drop(event)" ondragover="allowDrop(event)">
-                   <div class="partContainer" id="Qwh" >?</div>
-                   <div class="separatorPartContainer">+</div>
-                   <div class="partContainer" id="Qaux">?</div>
-                   <div class="separatorPartContainer">+</div>
-                   <div class="partContainer" id="Qsubject">?</div>
-                   <div class="separatorPartContainer">+</div>
-                   <div class="partContainer" id="QverbInf">?</div>
-                   <div class="separatorPartContainer">+</div>
-                   <div class="partContainer" id="Qcomplement">?</div>
-                   <div class="separatorPartContainer">+</div>
-                   <div class="partContainer" id="Q">?</div>
+               <center>
+                   <h3>Select a time for practice</h3>
+               </center>
+               
+               <div data-role="collapsible-set" class="principal" data-mini="true">
+                    <div data-role="collapsible" data-theme="a" >
+                        <h3>Simple Present (do / does)</h3>
+                        <ul data-role="listview" >
+
+                            <li>
+                                <a href="#">
+                                    <h3>Affirmative</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> 
+                                    <h3>Negative</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="grammcards/simple-present-do-does/interrogative.html"> 
+                                    <h3>Interrogative</h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                   <div data-role="collapsible" data-theme="a" >
+                        <h3>Future going to</h3>
+                        <ul data-role="listview" >
+                            <li>
+                                <a href="#">
+                                    <h3>Affirmative</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> 
+                                    <h3>Negative</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> 
+                                    <h3>Interrogative</h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div data-role="collapsible" data-theme="a" >
+                        <h3>Simple Present (To Be)</h3>
+                        <ul data-role="listview" >
+
+                            <li>
+                                <a href="#">
+                                    <h3>Affirmative</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> 
+                                    <h3>Negative</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> 
+                                    <h3>Interrogative</h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div data-role="collapsible" data-theme="a" >
+                        <h3>Past Simple (did - ed / d)</h3>
+                        <ul data-role="listview" >
+
+                            <li>
+                                <a href="#">
+                                    <h3>Affirmative</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> 
+                                    <h3>Negative</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> 
+                                    <h3>Interrogative</h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div data-role="collapsible" data-theme="a" >
+                        <h3>Future (will)</h3>
+                        <ul data-role="listview" >
+
+                            <li>
+                                <a href="#">
+                                    <h3>Affirmative</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> 
+                                    <h3>Negative</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> 
+                                    <h3>Interrogative</h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div data-role="collapsible" data-theme="a" >
+                        <h3>Past Continuos (was / were)</h3>
+                        <ul data-role="listview" >
+
+                            <li>
+                                <a href="#">
+                                    <h3>Affirmative</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> 
+                                    <h3>Negative</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> 
+                                    <h3>Interrogative</h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div data-role="collapsible" data-theme="a" >
+                        <h3>Present Perfect ( have / has)</h3>
+                        <ul data-role="listview" >
+
+                            <li>
+                                <a href="#">
+                                    <h3>Affirmative</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> 
+                                    <h3>Negative</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> 
+                                    <h3>Interrogative</h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div data-role="collapsible" data-theme="a" >
+                        <h3>Should (Modal Verb)</h3>
+                        <ul data-role="listview" >
+
+                            <li>
+                                <a href="#">
+                                    <h3>Affirmative</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> 
+                                    <h3>Negative</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> 
+                                    <h3>Interrogative</h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div data-role="collapsible" data-theme="a" >
+                        <h3>Resources</h3>
+                        <ul data-role="listview" >
+
+                            <li>
+                                <a href="#">
+                                    <h3>Superlative</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> 
+                                    <h3>Comparative</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> 
+                                    <h3>Interrogative</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> 
+                                    <h3>SIMPLE PRESENT TENSE (TABLE)</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> 
+                                    <h3>Adjetives And Personal pronouns (Table). </h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                </div>
+               
+               
+               <center>
+                   <h3>Do you want know something like...</h3>
+               </center>
+               
+               <div data-role="collapsible-set" class ="principal">
+                    <div data-role="collapsible" data-collapsed="true" data-theme="a" data-icon="bars">
+                        <h3>Manual</h3>
+                        
+                            <ul data-role="listview">
+                                <li><a href="#">
+                                    <img src="img/1.jpg" alt="pais" class="ui-li-icon">
+                                        Manual
+                                    </a>
+                                </li>
+                            </ul>
+                        
+                    </div>
+                    
+                    <div data-role="collapsible" data-collapsed="true" data-theme="a" >
+                        <h3>credits</h3>
+                        
+                            <ul data-role="listview">
+                                <li><a href="#" data-rel="dialog">Credits</a></li>
+                            </ul>
+                        
+                    </div>
+                    
+                </div>
+                
             </div>
             
-            <div class="partsContainer" ondrop="drop(event)" ondragover="allowDrop(event)">
-                   <div class="partObject" id="Awh" draggable="true" ondragstart="drag(event)">wh</div>
-                   <div class="partObject" id="Aaux" draggable="true">aux</div>
-                   <div class="partObject" id="Asubject" draggable="true">subject</div>
-                   <div class="partObject" id="AverbInf" draggable="true">verbInf</div>
-                   <div class="partObject" id="Acomplement" draggable="true">comp</div>
-                   <div class="partObject" id="A" draggable="true">?</div>
-            </div>
-
         </content>
         <footer data-role="footer" data-position="fixed"> 
            <h1>Colegio Siglo XXI</h1>
@@ -76,5 +269,3 @@
         <script type="text/javascript" src="cordova.js"></script>
     </body>
 </html>
-
-
