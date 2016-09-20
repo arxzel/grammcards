@@ -1,0 +1,28 @@
+<html>
+    <head>
+       <style>
+           .hola{
+               color:red;
+           }
+           div{
+               background-color: blue;
+           }
+        </style>
+        <title>homework</title>
+        <script>
+            function saludar(){
+                var nombre = document.getElementById("nombre").value;
+                alert("Hello "+nombre+" how are you");
+            }
+        </script>
+    </head>
+    <body>
+        <div class="hola">
+            hello world
+        </div>
+        <div>
+            <input type="text" id="nombre">
+            <input type="button" value="hello" id="bthello>" onclick="saludar()">
+        </div>
+    </body>
+</html>

@@ -19,7 +19,11 @@ function verifiInterrogative(){
 
 function verifiaffirmative(){
     var elementos = document.getElementsByName("select-choice-mini");
-    if(true){
+    if(
+       elementos[0].value =="subject"&&
+    elementos[1].value =="verb"&&
+    elementos[2].value == "complement"
+        ){
         alert("Correct!");
     }else{
         alert("error, it is not correct");
@@ -29,7 +33,13 @@ function verifiaffirmative(){
 
 function verifiNegative(){
     var elementos = document.getElementsByName("select-choice-mini");
-    if(true){
+    if(
+    elementos[0].value =="subject"&&
+    elementos[1].value =="do-does"&&
+    elementos[2].value =="not"&&
+    elementos[3].value =="verb"&&
+    elementos[4].value =="complement"
+        ){
         alert("Correct!");
     }else{
         alert("error, it is not correct");
