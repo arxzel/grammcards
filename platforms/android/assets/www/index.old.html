@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mainTheme.css">
+        
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            var codigo = $(ev.target.id).text();
+            //ev.dataTransfer.setData("text", ev.target.id);
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+</script>
+   
+    <title>Grammcards</title>
+</head>
+<body>
+   <section data-role="page" id="index">
+       <header data-role="header">
+           <h1> Grammcards </h1>
+        </header>
+        <content data-role="content">
+            <div class="mainHeader">
+                <h2>It's an example of how to work this App</h2>
+                <h3> The grammcards App was developed for 6th students</h3>
+            </div>
+            <div class="mainBody">
+               <h4>Simple present / how is the question's grammar?</h4>
+               <div class="grammContainer" ondrop="drop(event)" ondragover="allowDrop(event)">
+                   <div class="partContainer" id="Qwh" >?</div>
+                   <div class="separatorPartContainer">+</div>
+                   <div class="partContainer" id="Qaux">?</div>
+                   <div class="separatorPartContainer">+</div>
+                   <div class="partContainer" id="Qsubject">?</div>
+                   <div class="separatorPartContainer">+</div>
+                   <div class="partContainer" id="QverbInf">?</div>
+                   <div class="separatorPartContainer">+</div>
+                   <div class="partContainer" id="Qcomplement">?</div>
+                   <div class="separatorPartContainer">+</div>
+                   <div class="partContainer" id="Q">?</div>
+               </div>
+            </div>
+            
+            <div class="partsContainer" ondrop="drop(event)" ondragover="allowDrop(event)">
+                   <div class="partObject" id="Awh" draggable="true" ondragstart="drag(event)">wh</div>
+                   <div class="partObject" id="Aaux" draggable="true">aux</div>
+                   <div class="partObject" id="Asubject" draggable="true">subject</div>
+                   <div class="partObject" id="AverbInf" draggable="true">verbInf</div>
+                   <div class="partObject" id="Acomplement" draggable="true">comp</div>
+                   <div class="partObject" id="A" draggable="true">?</div>
+            </div>
+            
+            <a href="pruebamobile.html" data-role="button" data-mini="true">Ir a ejemplo 2</a>
+
+        </content>
+        <footer data-role="footer" data-position="fixed"> 
+           <h1>Colegio Siglo XXI</h1>
+        </footer>   
+       </section>
+       
+        <script type="text/javascript" src="cordova.js"></script>
+    </body>
+</html>
+
+

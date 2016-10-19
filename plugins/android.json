@@ -9,6 +9,9 @@
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.sigloxxi.grammcards"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.sigloxxi.grammcards"
         }
     },
     "dependent_plugins": {}
