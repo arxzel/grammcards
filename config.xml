@@ -40,5 +40,5 @@
     </platform>
     
     <icon src="www/img/logo_final.png" />
-    <preference name="SplashScreenDelay" value="8000" />
+    <preference name="SplashScreenDelay" value="10000" />
 </widget>
