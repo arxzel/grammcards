@@ -1,5 +1,5 @@
 function saludar(){
-    alert("Wellcome to exercise 1");
+    alert("Welcome to exercise 1");
 }
 
 function verifiExercise1(){
@@ -10,7 +10,9 @@ function verifiExercise1(){
         partes[2].value=="study"&&
         partes[3].value=="more for learn better"
     ){
-        alert("Correc!, you have wined the first exercise! \n congratulations");
+        alert("Congratulations! ^_^");
+    }else{
+        alert("Sorry, you are incorrect! :(")
     }
 }
 

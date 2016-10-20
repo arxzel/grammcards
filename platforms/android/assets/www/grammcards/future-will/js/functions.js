@@ -1,15 +1,15 @@
 function saludar(){
-    alert("¡Wellcome to your practice!");
+    alert("¡Welcome to your practice!");
 }
 
 function verifiInterrogative(){
     var elementos = document.getElementsByName("select-choice-mini");
-    if(elementos[0].value == "wh" &&
-      elementos[1].value == "will" &&
-      elementos[2].value == "subjet" &&
-      elementos[3].value == "verb" &&
-      elementos[4].value == "complement" &&
-      elementos [5].value == "?"
+    if(
+      elementos[0].value == "will" &&
+      elementos[1].value == "subject" &&
+      elementos[2].value == "verb" &&
+      elementos[3].value == "complement" &&
+      elementos [4].value == "?"
        ){
         alert("Correct!");
     }else{
@@ -36,14 +36,15 @@ function verifiaffirmative(){
 function verifiNegative(){
     var elementos = document.getElementsByName("select-choice-mini");
     if(
-          elementos[0].value == "subjet" &&
+          elementos[0].value == "subject" &&
           elementos[1].value == "will" &&
           elementos[2].value == "not" &&
-          elementos[3].value == "verb-in-present" &&
+          elementos[3].value == "verb in present" &&
           elementos[4].value == "complement" 
     ){
         alert("Correct!");
-    }else{
+    window.location.href="negative_exercise/exersice_1.html";
+    }else{ 
         alert("error, it is not correct");
     }
 }

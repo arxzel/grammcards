@@ -34,4 +34,5 @@
     <splash density="port-xhdpi" src="www/img/logo_final.png" />
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
+    <preference name="SplashScreenDelay" value="10000" />
 </widget>
