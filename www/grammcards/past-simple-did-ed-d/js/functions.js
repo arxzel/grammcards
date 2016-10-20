@@ -1,15 +1,15 @@
 function saludar(){
-    alert("¡Wellcome to your practice!");
+    alert("¡Welcome to your practice!");
 }
 
 function verifiInterrogative(){
     var elementos = document.getElementsByName("select-choice-mini");
-    if(elementos[0].value == "wh" &&
-      elementos[1].value == "did" &&
-      elementos[2].value == "subject" &&
-      elementos[3].value == "verb-in-present" &&
-      elementos[4].value == "complement" &&
-      elementos [5].value == "?"
+    if(
+      elementos[0].value == "did(aux)" &&
+      elementos[1].value == "subject" &&
+      elementos[2].value == "verb-in-present" &&
+      elementos[3].value == "complement" &&
+      elementos [4].value == "?"
       ){
         alert("Correct!");
     }else{

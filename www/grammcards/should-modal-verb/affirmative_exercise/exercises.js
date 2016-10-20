@@ -1,5 +1,5 @@
 function saludar(){
-    alert("Wellcome to exercise 1");
+    alert("Welcome to exercise 1");
 }
 
 function verifiExercise1(){
