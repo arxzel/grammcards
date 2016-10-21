@@ -23,15 +23,11 @@ function verifiInterrogative(){
 function verifiaffirmative(){
     var elementos = document.getElementsByName("select-choice-mini");
     if(
-      elementos[0].value == "subject" &&
-        
-      elementos[1].value == "was-were" &&
-        
-      elementos[2].value == "verb" &&
-        
-      elementos[3].value == "ing" &&
-        
-      elementos[4].value == "complement" 
+        elementos[0].value == "subject" &&
+        elementos[1].value == "was-were" &&
+        elementos[2].value == "verb" &&
+        elementos[3].value == "ing" &&
+        elementos[4].value == "complement" 
     ){
         alert("Correct!");
     }else{

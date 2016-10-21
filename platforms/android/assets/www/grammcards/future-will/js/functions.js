@@ -39,7 +39,7 @@ function verifiNegative(){
           elementos[0].value == "subject" &&
           elementos[1].value == "will" &&
           elementos[2].value == "not" &&
-          elementos[3].value == "verb in present" &&
+          elementos[3].value == "verb" &&
           elementos[4].value == "complement" 
     ){
         alert("Correct!");
