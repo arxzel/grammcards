@@ -1,5 +1,5 @@
 function saludar(){
-    alert("¡Wellcome to your practice!");
+    alert("¡Welcome to your practice!");
 }
 
 function verifiInterrogative(){
