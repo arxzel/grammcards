@@ -27,7 +27,6 @@ function verifiaffirmative(){
          elementos[1].value == "verb-to-be" &&
          elementos[2].value == "going-to" &&
          elementos[3].value == "complement" 
-        
     ){
         alert("Correct!");
         window.location.href="affirmative_exercise/exercise_1.html";
@@ -46,6 +45,7 @@ function verifiNegative(){
         elementos[2].value == "not" &&
         elementos[3].value == "going-to" &&
         elementos[4].value == "complement" 
+    ){
         alert("Correct!");
     }else{
         alert("error, it is not correct");
