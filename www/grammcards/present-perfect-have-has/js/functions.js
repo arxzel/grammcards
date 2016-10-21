@@ -22,8 +22,8 @@ function verifiaffirmative(){
     var elementos = document.getElementsByName("select-choice-mini");
     if(
         elementos[0].value == "subject"  &&
-        elementos[1].value == "verb"  &&
-        elementos[2].value == "verb-in-past-participle-past-perfect"  &&
+        elementos[1].value == "have-has(aux)"  &&
+        elementos[2].value == "verb-in-past-participle"  &&
         elementos[3].value == "complement" 
     ){
         alert("Correct!");
