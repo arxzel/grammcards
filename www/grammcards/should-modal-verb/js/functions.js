@@ -37,6 +37,7 @@ function verifiNegative(){
     var elementos = document.getElementsByName("select-choice-mini");
     if(true){
         alert("Correct!");
+        window.location.href="negative_exercises/exercise_1.html";
     }else{
         alert("error, it is not correct");
     }
